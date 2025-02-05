@@ -1,0 +1,94 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+nav h1 {
+    margin: 0;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #e5ff00 0%, #00ff0d 25%, #1100ff 50%, #b300ff 75%, #ff006a 100%);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 10s linear infinite;
+    position: absolute;
+    left: 1%;
+}
+
+@keyframes animate {
+    to {
+        background-position: 400%;
+    }
+}
+
+.pembungkus-button {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.myButton-1 {
+    -moz-box-shadow: 0px 10px 14px -7px #3b818c;
+    -webkit-box-shadow: 0px 10px 14px -7px #3b818c;
+    box-shadow: 0px 10px 14px -7px #3b818c;
+    background-color: #44a0c2;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #29668f;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Verdana;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 13px 32px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #00bfff;
+    transition: all .5s ease-out;
+}
+
+.myButton-1:hover {
+    background-color: #408c99;
+}
+
+.myButton-1:active {
+    position: relative;
+    top: 1px;
+}
+
+.myButton-2 {
+    -moz-box-shadow: 3px 4px 0px 0px #279609;
+    -webkit-box-shadow: 3px 4px 0px 0px #279609;
+    box-shadow: 3px 4px 0px 0px #279609;
+    background-color: #4acc6a;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #38ff4c;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Verdana;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 13px 7px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+    transition: all .5s ease-out;
+}
+
+.myButton-2:hover {
+    background-color: #88fa6c;
+}
+
+.myButton-2:active {
+    position: relative;
+    top: 1px;
+}

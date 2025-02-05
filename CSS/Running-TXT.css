@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Pixel-Bit';
+    src: url(../Font/kkberkbm.ttf);
+}
+
+html {
+    background-color: black;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vw;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Pixel-Bit';
+    font-size: 150px;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #e5ff00 0%, #00ff0d 25%, #1100ff 50%, #ff00d4 75%, #ff8800 100%);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 16s linear infinite;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+@media (min-width:768px) {
+    body {
+        height: 100vh;
+    }
+}
+
+@keyframes animate {
+    to {
+        background-position: 400%;
+    }
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width:768px) {
+    body {
+        transform: rotate(90deg);
+    }
+    h1 {
+        font-size: 50px;
+        animation: animate 14s linear infinite;
+    }
+    @keyframes animate {
+        to {
+            background-position: 400%;
+        }
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+}
